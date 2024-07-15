@@ -20,7 +20,7 @@
 @Dark_Grayish_Violet: hsl(270, 7%, 64%);
 
 // Gradients
-@light_magenta:hsl (293, 100%, 63%);
+@Light_Magenta: hsl(293, 100%, 63%);
 @Light_Violet: hsl(264, 100%, 61%);
 
 //Secundary
@@ -28,3 +28,12 @@
 @Light_Grayish_Violet: hsl(270, 20%, 96%);
 @Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
 @Very_Light_Magenta: hsl(289, 100%, 72%);
+
+body {
+  .background {
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(@Light_Magenta, @Light_Violet);
+    border-radius: 0 0 200px 0;
+  }
+}
