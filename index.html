@@ -4,10 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="background"></div>
+    <main class="container">
+      <div class="smartphone">
+        <div class="chat-app">
+          <div class="top-chat-app">
+            <div class="face-id"></div>
+            <div class="user-infos">
+              <i data-feather="chevron-left" color="white" width="18px"></i>
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="images/avatar.jpg" alt="profile image" />
+                </div>
+                <div class="name-status">
+                  <p>Samuel Green</p>
+                  <p class="small-p">Avaliable to Walk</p>
+                </div>
+              </div>
+              <i data-feather="more-vertical" color="white" width="12px"></i>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="messages">
+              <div class="message user">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="message user">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="group-message">
+                <div class="message-img">
+                  <img src="images/dog-image-1.jpg" alt="Image" />
+                  <img src="images/dog-image-2.jpg" alt="Image" />
+                  <img src="images/dog-image-3.jpg" alt="Image" />
+                </div>
+                <div class="message my"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="message my"><p>lorem ipsun do</p></div>
+              </div>
+
+              <div class="message user">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="price-option">
+                <div class="group">
+                  <div class="radio"></div>
+                  <p class="time">30 minute walk</p>
+                </div>
+                <p class="price">$29</p>
+              </div>
+              <div class="price-option">
+                <div class="group">
+                  <div class="radio"></div>
+                  <p class="time">1 hour walk</p>
+                </div>
+                <p class="price">$49</p>
+              </div>
+            </div>
+
+            <div class="input-area">
+              <div class="input">
+                <p class="placeholder">Type a message...</p>
+                <button class="submit">
+                  <i
+                    data-feather="chevron-right"
+                    color="white"
+                    width="24px"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
