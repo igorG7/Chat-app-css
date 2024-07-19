@@ -30,6 +30,7 @@
 @Very_Light_Magenta: hsl(289, 100%, 72%);
 
 body {
+  position: relative;
   .background {
     width: 50%;
     left: -100px;
@@ -41,7 +42,7 @@ body {
   }
 
   .container {
-    margin: 0 auto;
+    margin: auto;
     width: 70%;
     height: 100%;
 
@@ -255,6 +256,21 @@ body {
             }
           }
         }
+      }
+    }
+
+    .text-content {
+      margin: 64px 0;
+      text-align: center;
+
+      h1 {
+        color: @Very_Dark_Desaturated_Violet;
+      }
+
+      p {
+        color: @Dark_Grayish_Violet;
+        text-align: center;
+        margin: 32px 0;
       }
     }
   }
