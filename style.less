@@ -192,7 +192,6 @@ body {
                 max-width: 50px;
                 height: 30%;
                 max-height: 50px;
-
                 border-radius: 8px;
               }
             }
@@ -275,7 +274,7 @@ body {
     }
 
     .text-content {
-      margin: 64px 0;
+      margin-top: 64px;
       text-align: center;
 
       h1 {
@@ -287,8 +286,45 @@ body {
       p {
         color: @Dark_Grayish_Violet;
         text-align: center;
-        margin: 32px 0;
+        margin-top: 32px;
         line-height: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1360px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+
+    .background {
+      width: 30%;
+      height: 90%;
+      left: -50px;
+      border-radius: 0 0 400px 400px;
+    }
+
+    .container {
+      display: flex;
+      width: 50%;
+
+      .text-content {
+        width: 80%;
+        margin-left: 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          text-align: start;
+        }
+
+        p {
+          text-align: start;
+          max-width: 460px;
+        }
       }
     }
   }
